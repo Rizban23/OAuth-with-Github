@@ -25,24 +25,24 @@
 
 ### 1. Клонируйте репозиторий
 
-git clone https://github.com/username/github-profile-viewer.git
+git clone https://github.com/Rizban23/OAuth-with-Github
  
 2. Установка и запуск frontend 
-cd github-profile-viewer
-npm install
-npm run build:css    # если используете Tailwind CSS
-npm start
+- cd github-profile-viewer
+- npm install
+- npm run build:css    # если используете Tailwind CSS
+- npm start
 
 Создайте файл .env в директории github-profile-viewer/:
-REACT_APP_CLIENT_ID=ваш_github_client_id
+- REACT_APP_CLIENT_ID=ваш_github_client_id
 
 3. Установка и запуск backend
 
-cd ../github-profile-viewer-backend
-npm install
-npm start
+- cd ../github-profile-viewer-backend
+- npm install
+- npm start
 
 Создайте файл .env в директории github-profile-viewer-backend/:
-CLIENT_ID=ваш_github_client_id
-CLIENT_SECRET=ваш_github_client_secret
+- CLIENT_ID=ваш_github_client_id
+- CLIENT_SECRET=ваш_github_client_secret
 
