@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# 🚀 GitHub OAuth Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Полноценное приложение на **React + Express**, в котором реализована:
 
-## Available Scripts
+- Авторизация через GitHub OAuth
+- Отображение и редактирование профиля
+- Вкладки с репозиториями (публичные и приватные)
+- Поиск других пользователей и их репозиториев
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🔧 Используемые технологии
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React + React Router
+- Tailwind CSS
+- Express.js (бэкенд для OAuth)
+- GitHub API v3
+- Axios
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚙️ Как запустить проект локально
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Убедитесь, что у вас есть GitHub OAuth приложение и вы знаете `Client ID` и `Client Secret`.
 
-### `npm run build`
+### 1. Клонируйте репозиторий
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone https://github.com/username/github-profile-viewer.git
+ 
+2. Установка и запуск frontend 
+cd github-profile-viewer
+npm install
+npm run build:css    # если используете Tailwind CSS
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Создайте файл .env в директории github-profile-viewer/:
+REACT_APP_CLIENT_ID=ваш_github_client_id
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Установка и запуск backend
 
-### `npm run eject`
+cd ../github-profile-viewer-backend
+npm install
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Создайте файл .env в директории github-profile-viewer-backend/:
+CLIENT_ID=ваш_github_client_id
+CLIENT_SECRET=ваш_github_client_secret
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
