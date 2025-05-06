@@ -1,4 +1,3 @@
-// src/pages/Main.jsx
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ProfileCard from "../components/ProfileCard";
@@ -8,7 +7,7 @@ export default function MainPage({ token, setToken, user, setUser }) {
   const [activeTab, setActiveTab] = useState("profile");
   const [repos, setRepos] = useState([]);
   const [email, setEmail] = useState(null);
-  const [visibleType, setVisibleType] = useState("public"); // 🆕 Добавлено
+  const [visibleType, setVisibleType] = useState("public"); 
 
   useEffect(() => {
     if (!token) return;
@@ -90,7 +89,7 @@ export default function MainPage({ token, setToken, user, setUser }) {
 
             {activeTab === "repos" && (
               <div>
-                {/* КНОПКИ ФИЛЬТРА */}
+               
                 <div style={{ marginBottom: 20 }}>
                   <button
                     onClick={() => setVisibleType("public")}
