@@ -12,7 +12,7 @@ function AuthCallback({ setToken }) {
       return;
     }
 
-    localStorage.setItem("github_token", token); // 🛠 ФИКС — туура кілт!
+    localStorage.setItem("github_token", token); 
     if (setToken) setToken(token);
     navigate("/");
   }, [setToken, navigate]);
